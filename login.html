@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <style>
       .neon {
@@ -15,14 +19,29 @@
 
   <body class="bg-gray-900">
     <!-- HEADER -->
-    <header class="bg-gray-950 px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-purple-400">Exo Game 🎮</h1>
-
+    <header
+      class="bg-gray-950 text-white px-10 py-8 flex items-center justify-between"
+    >
       <nav class="hidden md:flex gap-6 text-gray-300">
-        <a href="#" class="hover:text-white">خانه</a>
-        <a href="#" class="hover:text-white">محصولات</a>
-        <a href="#" class="hover:text-white">تماس</a>
+        <a href="#" class="hover:text-white text-2xl">خانه</a>
+        <a href="#" class="hover:text-white text-2xl">محصولات</a>
+        <a href="#" class="hover:text-white text-2xl">درباره ما</a>
+        <a href="#" class="hover:text-white text-2xl">تماس</a>
       </nav>
+
+      <!-- وسط (لوگو) -->
+      <div
+        class="absolute left-1/2 -translate-x-1/2 text-4xl font-bold select-none"
+      >
+        <span class="text-purple-400 neon">EXO</span
+        ><i class="fa-solid fa-headset"></i>
+      </div>
+      <a
+        href="amir.html"
+        class="bg-purple-600 px-6 py-3 rounded-xl text-white font-bold transition transform hover:scale-110 hover:bg-purple-500 hover:shadow-lg hover:shadow-purple-500/50"
+      >
+        بازگشت
+      </a>
     </header>
 
     <!-- HERO -->
@@ -59,29 +78,79 @@
       </div>
     </section>
 
-    <!-- FEATURE CARDS -->
-    <section class="py-16 px-6">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
-          ⚡ سرعت بالا
+    <!-- FEATURES -->
+    <section class="py-20 px-2 text-white bg-gray-900">
+      <div class="text-center mb-14">
+        <h2 class="text-6xl font-bold text-purple-400 -mt-6 select-none">
+          چرا اگزو گیم
+        </h2>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center max-w-screen-2xl mx-auto px-4"
+      >
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">ارسال سریع</p>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
-          🛡️ امنیت
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-shield-halved select-none"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold">گارانتی</p>
         </div>
 
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition">
-          🎮 تجربه گیمینگ
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">بهترین قیمت</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-xl hover:bg-gray-700 transition">
-          📞 پشتیبانی 24 ساعته
+
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">
+            پشتیبانی 24 ساعته
+          </p>
         </div>
       </div>
     </section>
-
     <!-- FOOTER -->
-    <footer class="bg-gray-950 py-10 text-center text-gray-400">
-      © 2026 Exo Game
+    <footer class="bg-gray-950 text-white py-10 px-6 mt-10">
+      <div class="text-center">
+        <h3
+          class="text-2xl font-bold text-purple-400 flex items-center gap-2 justify-center w-full"
+        >
+          اگزو گیم
+          <i class="fa-solid fa-ghost text-gray-400"></i>
+        </h3>
+        <p class="text-gray-400 mt-2 select-none">
+          فروشگاه تخصصی تجهیزات گیمینگ
+        </p>
+
+        <p class="text-gray-500 mt-4">
+          <i class="fa-solid fa-location-dot"></i>
+          تهران، خیابان ولیعصر
+        </p>
+
+        <p class="text-gray-500">
+          <i class="fa-solid fa-phone"></i>
+          099254685
+        </p>
+      </div>
     </footer>
   </body>
 </html>

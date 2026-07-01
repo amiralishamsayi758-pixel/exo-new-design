@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <style>
       .neon {
@@ -16,18 +20,25 @@
   <body class="bg-gray-900">
     <!-- HEADER -->
     <header
-      class="bg-gray-950 text-white px-6 py-4 flex items-center justify-between"
+      class="bg-gray-950 text-white px-10 py-8 flex items-center justify-between"
     >
       <nav class="hidden md:flex gap-6 text-gray-300">
-        <a href="#" class="hover:text-white">خانه</a>
-        <a href="#" class="hover:text-white">محصولات</a>
-        <a href="#" class="hover:text-white">درباره ما</a>
-        <a href="#" class="hover:text-white">تماس</a>
+        <a href="amir.html" class="hover:text-white text-2xl">خانه</a>
+        <a href="buy.html" class="hover:text-white text-2xl">محصولات</a>
+        <a href="aboutus.html" class="hover:text-white text-2xl">درباره ما</a>
+        <a href="#" class="hover:text-white text-2xl">تماس</a>
       </nav>
 
+      <!-- وسط (لوگو) -->
+      <div
+        class="absolute left-1/2 -translate-x-1/2 text-4xl font-bold select-none"
+      >
+        <span class="text-purple-400 neon">EXO</span
+        ><i class="fa-solid fa-headset"></i>
+      </div>
       <a
         href="login.html"
-        class="bg-purple-500 hover:bg-purple-600 px-4 py-2 rounded-xl transition"
+        class="bg-purple-600 px-6 py-3 rounded-xl text-white font-bold transition transform hover:scale-110 hover:bg-purple-500 hover:shadow-lg hover:shadow-purple-500/50"
       >
         ورود / ثبت‌نام
       </a>
@@ -49,97 +60,264 @@
       <div class="absolute inset-0 bg-black/60"></div>
 
       <!-- CONTENT -->
-      <div class="relative z-10 text-white">
-        <h1 class="text-4xl md:text-6xl font-bold">
-          اگزو <span class="text-purple-400 neon">گیم</span> 🎮
+      <div class="relative z-10 text-white flex flex-col gap-6">
+        <h1 class="text-6xl md:text-8xl font-bold select-none">
+          اگزو <span class="text-purple-400 neon">گیم</span>
+          <i class="fa-solid fa-ghost"></i>
         </h1>
 
-        <p class="text-gray-300 mt-4">بهترین تجهیزات گیمینگ با قیمت عالی</p>
+        <p class="text-gray-300 text-2xl select-none">
+          بهترین تجهیزات گیمینگ با قیمت عالی
+        </p>
 
-        <button
-          class="mt-6 bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-xl transition"
+        <a
+          href="buy.html"
+          class="bg-purple-600 px-8 py-5 rounded-xl text-white font-bold select-none transition transform hover:scale-110 hover:bg-purple-500 hover:shadow-lg hover:shadow-purple-500/50"
         >
           شروع خرید
-        </button>
+        </a>
       </div>
+      <div
+        class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-gray-900 to-transparent"
+      ></div>
     </section>
 
     <!-- FEATURES -->
-    <section class="py-16 px-6 text-white bg-gray-900">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-purple-400">چرا اگزو گیم</h2>
+    <section class="bg-gray-900 text-white pt-24 pb-24 -mt-20 relative z-10">
+      <div class="text-center mb-14">
+        <h2 class="text-6xl font-bold text-purple-400 -mt-6 select-none">
+          چرا اگزو گیم
+        </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-        <div class="bg-gray-800 p-6 rounded-xl hover:bg-gray-700 transition">
-          🚀
-          <p class="mt-2">ارسال سریع</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center max-w-screen-2xl mx-auto px-4"
+      >
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">ارسال سریع</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-xl hover:bg-gray-700 transition">
-          🛡️
-          <p class="mt-2">گارانتی</p>
+
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">گارانتی</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-xl hover:bg-gray-700 transition">
-          💰
-          <p class="mt-2">بهترین قیمت</p>
+
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">بهترین قیمت</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-xl hover:bg-gray-700 transition">
-          📞
-          <p class="mt-2">پشتیبانی 24 ساعته</p>
+
+        <div
+          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+        >
+          <div class="text-5xl">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <p class="mt-4 text-xl font-semibold select-none">
+            پشتیبانی 24 ساعته
+          </p>
         </div>
       </div>
     </section>
 
     <!-- PRODUCTS -->
-    <section class="py-16 px-6 bg-gray-900">
+    <section class="py-16 bg-gray-900 text-white">
       <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-purple-400">محصولات</h2>
+        <h2 class="text-5xl font-bold text-purple-400 select-none">محصولات</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-5 rounded-xl">
-          <h3 class="text-xl font-bold">کیبورد گیمینگ</h3>
-          <p class="text-gray-400 mt-2">3,500,000 تومان</p>
-          <button
-            class="mt-4 bg-purple-500 px-4 py-2 rounded-xl hover:bg-purple-400 transition"
-          >
-            خرید
-          </button>
+      <!-- WRAPPER -->
+      <div
+        id="sliderWrapper"
+        class="relative max-w-6xl mx-auto group overflow-hidden"
+      >
+        <!-- VIEWPORT -->
+        <div
+          id="slider"
+          class="flex transition-transform duration-500 ease-in-out"
+        >
+          <!-- 1 -->
+          <div class="min-w-full flex justify-center">
+            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+              <h3 class="text-2xl font-bold select-none">کیبورد گیمینگ</h3>
+              <p class="text-gray-400 mt-2 select-none">3,500,000 تومان</p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="min-w-full flex justify-center">
+            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+              <h3 class="text-2xl font-bold select-none">هدست گیمینگ</h3>
+              <p class="text-gray-400 mt-2 select-none">5,000,000 تومان</p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="min-w-full flex justify-center">
+            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+              <h3 class="text-2xl font-bold select-none">ماوس گیمینگ</h3>
+              <p class="text-gray-400 mt-2 select-none">2,800,000 تومان</p>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="min-w-full flex justify-center">
+            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+              <h3 class="text-2xl font-bold select-none">مانیتور گیمینگ</h3>
+              <p class="text-gray-400 mt-2 select-none">12,000,000 تومان</p>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="min-w-full flex justify-center">
+            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+              <h3 class="text-2xl font-bold select-none">صندلی گیمینگ</h3>
+              <p class="text-gray-400 mt-2 select-none">8,500,000 تومان</p>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="min-w-full flex justify-center">
+            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+              <h3 class="text-2xl font-bold select-none">موس پد RGB</h3>
+              <p class="text-gray-400 mt-2 select-none">1,200,000 تومان</p>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-gray-800 p-5 rounded-xl">
-          <h3 class="text-xl font-bold">هدست گیمینگ</h3>
-          <p class="text-gray-400 mt-2">5,000,000 تومان</p>
-          <button
-            class="mt-4 bg-purple-500 px-4 py-2 rounded-xl hover:bg-purple-400 transition"
-          >
-            خرید
-          </button>
-        </div>
+        <!-- ARROWS -->
+        <button
+          id="leftBtn"
+          type="button"
+          class="absolute left-2 top-1/2 -translate-y-1/2 bg-purple-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transition"
+        >
+          ❮
+        </button>
 
-        <div class="bg-gray-800 p-5 rounded-xl">
-          <h3 class="text-xl font-bold">ماوس گیمینگ</h3>
-          <p class="text-gray-400 mt-2">2,800,000 تومان</p>
-          <button
-            class="mt-4 bg-purple-500 px-4 py-2 rounded-xl hover:bg-purple-400 transition"
-          >
-            خرید
-          </button>
-        </div>
+        <button
+          id="rightBtn"
+          type="button"
+          class="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-600 p-3 rounded-full opacity-0 group-hover:opacity-100 transition"
+        >
+          ❯
+        </button>
       </div>
+
+      <!-- DOTS -->
+      <div id="dots" class="flex justify-center gap-2 mt-6"></div>
     </section>
 
     <!-- FOOTER -->
     <footer class="bg-gray-950 text-white py-10 px-6 mt-10">
       <div class="text-center">
-        <h3 class="text-2xl font-bold text-purple-400">اگزو گیم 🎮</h3>
+        <h3
+          class="text-2xl font-bold text-purple-400 flex items-center gap-2 justify-center w-full"
+        >
+          اگزو گیم
+          <i class="fa-solid fa-ghost text-gray-400"></i>
+        </h3>
+        <p class="text-gray-400 mt-2 select-none">
+          فروشگاه تخصصی تجهیزات گیمینگ
+        </p>
 
-        <p class="text-gray-400 mt-2">فروشگاه تخصصی تجهیزات گیمینگ</p>
+        <p class="text-gray-500 mt-4">
+          <i class="fa-solid fa-location-dot"></i>
+          تهران، خیابان ولیعصر
+        </p>
 
-        <p class="text-gray-500 mt-4">تهران، خیابان ولیعصر</p>
-
-        <p class="text-gray-500">099254685</p>
+        <p class="text-gray-500">
+          <i class="fa-solid fa-phone"></i>
+          099254685
+        </p>
       </div>
     </footer>
   </body>
+  <script>
+    const slider = document.getElementById("slider");
+    const cards = slider.children;
+    const dotsContainer = document.getElementById("dots");
+
+    let index = 0;
+    let interval;
+
+    // ===== dots =====
+    function createDots() {
+      for (let i = 0; i < cards.length; i++) {
+        const dot = document.createElement("div");
+        dot.className =
+          "w-2 h-2 bg-gray-500 rounded-full cursor-pointer transition-all";
+
+        dot.onclick = () => scrollToCard(i);
+
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateDots() {
+      [...dotsContainer.children].forEach((dot, i) => {
+        dot.className =
+          i === index
+            ? "w-6 h-2 bg-purple-500 rounded-full transition-all"
+            : "w-2 h-2 bg-gray-500 rounded-full transition-all";
+      });
+    }
+
+    // ===== move (با transform به‌جای scrollIntoView) =====
+    // scrollIntoView باعث می‌شد کل صفحه هم اسکرول بشه، چون
+    // مرورگر کل المنت رو سعی می‌کرد "ببینه"، نه فقط داخل اسلایدر.
+    // با transform فقط خود ترک اسلایدر حرکت می‌کنه و صفحه ثابت می‌مونه.
+    function scrollToCard(i) {
+      index = i;
+      slider.style.transform = `translateX(${index * 100}%)`;
+      updateDots();
+    }
+
+    // ===== arrows =====
+    document.getElementById("rightBtn").onclick = () => {
+      index = (index - 1 + cards.length) % cards.length; // 👈 قبلی
+      scrollToCard(index);
+    };
+
+    document.getElementById("leftBtn").onclick = () => {
+      index = (index + 1) % cards.length; // 👈 بعدی
+      scrollToCard(index);
+    };
+
+    // ===== autoplay =====
+    function startAuto() {
+      interval = setInterval(() => {
+        index = (index + 1) % cards.length;
+        scrollToCard(index);
+      }, 3500);
+    }
+
+    function stopAuto() {
+      clearInterval(interval);
+    }
+
+    document
+      .getElementById("sliderWrapper")
+      .addEventListener("mouseenter", stopAuto);
+    document
+      .getElementById("sliderWrapper")
+      .addEventListener("mouseleave", startAuto);
+
+    // init
+    createDots();
+    scrollToCard(0);
+    startAuto();
+  </script>
 </html>
