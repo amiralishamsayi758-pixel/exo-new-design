@@ -14,6 +14,32 @@
           0 0 4px #a855f7,
           0 0 8px #a855f7;
       }
+      /* انیمیشن بالا پایین */
+      @keyframes ghostFloat {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .ghost-effect {
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      /* وقتی موس میره روش */
+      .ghost-effect:hover {
+        animation: ghostFloat 1.5s ease-in-out infinite;
+        text-shadow:
+          0 0 10px #f5f4f6,
+          0 0 20px #ffffff,
+          0 0 40px #ffffff;
+      }
     </style>
   </head>
 
@@ -63,7 +89,10 @@
       <div class="relative z-10 text-white flex flex-col gap-6">
         <h1 class="text-6xl md:text-8xl font-bold select-none">
           اگزو <span class="text-purple-400 neon">گیم</span>
-          <i class="fa-solid fa-ghost"></i>
+          <i
+            class="fa-solid fa-ghost ghost-effect text-purple-400 text-8xl transition duration-300 hover:scale-125 hover:rotate-12 drop-shadow-[0_0_15px_rgba(168,85,247,0.8)]"
+          >
+          </i>
         </h1>
 
         <p class="text-gray-300 text-2xl select-none">
@@ -151,7 +180,15 @@
         >
           <!-- 1 -->
           <div class="min-w-full flex justify-center">
-            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+            <div
+              class="bg-gray-800 p-6 rounded-xl w-[90%] text-center overflow-hidden group"
+            >
+              <div class="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="images/keyboard.jpg"
+                  class="w-full h-[270 px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <h3 class="text-2xl font-bold select-none">کیبورد گیمینگ</h3>
               <p class="text-gray-400 mt-2 select-none">3,500,000 تومان</p>
             </div>
@@ -159,7 +196,15 @@
 
           <!-- 2 -->
           <div class="min-w-full flex justify-center">
-            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+            <div
+              class="bg-gray-800 p-6 rounded-xl w-[90%] text-center overflow-hidden group"
+            >
+              <div class="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="images/headset.jpg.jpg"
+                  class="w-full h-[270 px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <h3 class="text-2xl font-bold select-none">هدست گیمینگ</h3>
               <p class="text-gray-400 mt-2 select-none">5,000,000 تومان</p>
             </div>
@@ -167,7 +212,15 @@
 
           <!-- 3 -->
           <div class="min-w-full flex justify-center">
-            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+            <div
+              class="bg-gray-800 p-6 rounded-xl w-[90%] text-center overflow-hidden group"
+            >
+              <div class="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="images/mouse.jpg.jpg"
+                  class="w-full h-[270 px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <h3 class="text-2xl font-bold select-none">ماوس گیمینگ</h3>
               <p class="text-gray-400 mt-2 select-none">2,800,000 تومان</p>
             </div>
@@ -175,7 +228,15 @@
 
           <!-- 4 -->
           <div class="min-w-full flex justify-center">
-            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+            <div
+              class="bg-gray-800 p-6 rounded-xl w-[90%] text-center overflow-hidden group"
+            >
+              <div class="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="images/monitor.jpg.jpg"
+                  class="w-full h-[270 px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <h3 class="text-2xl font-bold select-none">مانیتور گیمینگ</h3>
               <p class="text-gray-400 mt-2 select-none">12,000,000 تومان</p>
             </div>
@@ -183,7 +244,15 @@
 
           <!-- 5 -->
           <div class="min-w-full flex justify-center">
-            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+            <div
+              class="bg-gray-800 p-6 rounded-xl w-[90%] text-center overflow-hidden group"
+            >
+              <div class="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="images/chair.jpg.jpg"
+                  class="w-full h-[270 px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <h3 class="text-2xl font-bold select-none">صندلی گیمینگ</h3>
               <p class="text-gray-400 mt-2 select-none">8,500,000 تومان</p>
             </div>
@@ -191,7 +260,15 @@
 
           <!-- 6 -->
           <div class="min-w-full flex justify-center">
-            <div class="bg-gray-800 p-6 rounded-xl w-[90%] text-center">
+            <div
+              class="bg-gray-800 p-6 rounded-xl w-[90%] text-center overflow-hidden group"
+            >
+              <div class="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="images/mousepad.jpg.jpg"
+                  class="w-full h-[270 px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <h3 class="text-2xl font-bold select-none">موس پد RGB</h3>
               <p class="text-gray-400 mt-2 select-none">1,200,000 تومان</p>
             </div>

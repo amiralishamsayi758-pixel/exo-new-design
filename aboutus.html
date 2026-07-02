@@ -16,19 +16,19 @@
       }
     </style>
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 min-h-screen flex flex-col">
     <!-- HEADER -->
     <header class="bg-gray-950 px-6 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold text-purple-400">Exo Game 🎮</h1>
 
       <nav class="hidden md:flex gap-6 text-gray-300">
-        <a href="#" class="hover:text-white">خانه</a>
-        <a href="#" class="hover:text-white">محصولات</a>
+        <a href="amir.html" class="hover:text-white">خانه</a>
+        <a href="buy.html" class="hover:text-white">محصولات</a>
         <a href="#" class="hover:text-white">تماس</a>
       </nav>
     </header>
     <!-- ABOUT US -->
-    <section class="py-16 px-6 text-white">
+    <section class="py-16 px-6 text-white flex-1">
       <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-2xl">
         <h2 class="text-4xl text-center font-bold text-white mb-4">
           ما <span class="text-purple-400 neon"> اگزو گیم </span> هستیم
@@ -41,53 +41,90 @@
         </p>
       </div>
     </section>
-    <!-- FEATURES -->
-    <section class="py-20 px-2 text-white bg-gray-900">
-      <div class="text-center mb-14">
-        <h2 class="text-6xl font-bold text-purple-400 -mt-6 select-none">
-          چرا اگزو گیم
-        </h2>
-      </div>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center max-w-screen-2xl mx-auto px-4"
-      >
+    <section class="py-16 px-6 bg-[#0a0d16] text-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- CARD 1 -->
         <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+          class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-purple-500/20"
         >
-          <div class="text-5xl">
-            <i class="fa-solid fa-rocket"></i>
+          <img
+            src="images/team.jpg"
+            class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+          />
+
+          <div class="p-5">
+            <div
+              class="flex items-center gap-2 text-purple-400 font-bold text-xl"
+            >
+              <i class="fa-solid fa-headphones"></i>
+              Team Content
+            </div>
+
+            <p class="text-gray-300 mt-2 text-sm leading-6">
+              تیم اگزو گیم متشکل از افراد متخصص در طراحی، توسعه و مدیریت محصولات
+              دیجیتال است. ما با همکاری نزدیک تلاش می‌کنیم یک تجربه کاربری سریع،
+              مدرن و لذت‌بخش برای کاربران ایجاد کنیم. هر عضو تیم نقش مهمی در
+              ساخت و بهبود این فروشگاه دارد؛ از طراحی رابط کاربری تا توسعه و
+              مدیریت محصولات.
+            </p>
           </div>
-          <p class="mt-4 text-xl font-semibold select-none">ارسال سریع</p>
         </div>
 
+        <!-- CARD 2 -->
         <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+          class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-purple-500/20"
         >
-          <div class="text-5xl">
-            <i class="fa-solid fa-shield-halved select-none"></i>
+          <img
+            src="images/store.jpg"
+            class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+          />
+
+          <div class="p-5">
+            <div
+              class="flex items-center gap-2 text-purple-400 font-bold text-xl"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              Physical Store Sales
+            </div>
+
+            <p class="text-gray-300 mt-2 text-sm leading-6">
+              فروشگاه اگزو گیم علاوه بر فروش آنلاین، امکان خرید حضوری را نیز
+              برای مشتریان فراهم کرده است. شما می‌توانید به صورت مستقیم به
+              فروشگاه مراجعه کرده و محصولات گیمینگ را از نزدیک مشاهده و تست
+              کنید. تیم ما در فروش حضوری آماده ارائه مشاوره تخصصی به شماست تا
+              بهترین انتخاب را متناسب با نیاز خود داشته باشید. هدف ما ایجاد
+              تجربه‌ای سریع، مطمئن و لذت‌بخش در خرید حضوری برای گیمرها است
+            </p>
           </div>
-          <p class="mt-4 text-xl font-semibold">گارانتی</p>
         </div>
 
+        <!-- CARD 3 -->
         <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
+          class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-purple-500/20"
         >
-          <div class="text-5xl">
-            <i class="fa-solid fa-coins"></i>
-          </div>
-          <p class="mt-4 text-xl font-semibold select-none">بهترین قیمت</p>
-        </div>
+          <img
+            src="images/customer.jpg"
+            class="w-full h-48 object-cover hover:scale-110 transition duration-500"
+          />
 
-        <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
-        >
-          <div class="text-5xl">
-            <i class="fa-solid fa-phone"></i>
+          <div class="p-5">
+            <div
+              class="flex items-center gap-2 text-purple-400 font-bold text-xl"
+            >
+              <i class="fa-solid fa-face-smile"></i>
+              Customer Satisfaction
+            </div>
+
+            <p class="text-gray-300 mt-2 text-sm leading-6">
+              رضایت مشتریان برای ما در اگزو گیم در اولویت قرار دارد. ما تلاش
+              می‌کنیم بهترین تجربه خرید را با ارائه محصولات باکیفیت، قیمت مناسب
+              و پشتیبانی سریع برای کاربران فراهم کنیم. بازخوردهای مثبت مشتریان
+              نشان‌دهنده تعهد ما به کیفیت و خدمات حرفه‌ای است. هدف ما ایجاد یک
+              رابطه پایدار و قابل اعتماد با هر مشتری است تا با خیال راحت خرید
+              خود را انجام دهد. در اگزو گیم، رضایت شما فقط یک هدف نیست، بلکه یک
+              تعهد است.
+            </p>
           </div>
-          <p class="mt-4 text-xl font-semibold select-none">
-            پشتیبانی 24 ساعته
-          </p>
         </div>
       </div>
     </section>

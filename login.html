@@ -17,15 +17,15 @@
     </style>
   </head>
 
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 min-h-screen flex flex-col">
     <!-- HEADER -->
     <header
       class="bg-gray-950 text-white px-10 py-8 flex items-center justify-between"
     >
       <nav class="hidden md:flex gap-6 text-gray-300">
-        <a href="#" class="hover:text-white text-2xl">خانه</a>
-        <a href="#" class="hover:text-white text-2xl">محصولات</a>
-        <a href="#" class="hover:text-white text-2xl">درباره ما</a>
+        <a href="amir.html" class="hover:text-white text-2xl">خانه</a>
+        <a href="buy.html" class="hover:text-white text-2xl">محصولات</a>
+        <a href="aboutus.html" class="hover:text-white text-2xl">درباره ما</a>
         <a href="#" class="hover:text-white text-2xl">تماس</a>
       </nav>
 
@@ -46,7 +46,7 @@
 
     <!-- HERO -->
     <section class="text-center py-20">
-      <h2 class="text-4xl md:text-6xl font-bold">
+      <h2 class="text-4xl md:text-6xl text-white font-bold">
         ورود به <span class="neon text-purple-400">اکسپو گیم</span>
       </h2>
 
@@ -54,9 +54,11 @@
     </section>
 
     <!-- LOGIN FORM -->
-    <section class="flex justify-center">
-      <div class="bg-gray-800 p-8 rounded-2xl w-full max-w-md">
-        <h3 class="text-2xl font-bold mb-6 text-center">فرم ورود</h3>
+    <section class="flex justify-center flex-1">
+      <div
+        class="bg-gray-800 p-8 rounded-2xl w-full max-w-md flex flex-col gap-2"
+      >
+        <h3 class="text-2xl font-bold mb-6 text-center text-white">فرم ورود</h3>
 
         <input
           type="text"
@@ -75,59 +77,19 @@
         >
           ورود
         </button>
+        <button
+          class="w-full bg-white hover:bg-purple-500 py-3 rounded-xl transition"
+        >
+          ایجاد حساب کاربری
+        </button>
+        <button
+          class="w-full bg-white hover:bg-purple-500 py-3 rounded-xl transition"
+        >
+          فراموشی رمز
+        </button>
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <section class="py-20 px-2 text-white bg-gray-900">
-      <div class="text-center mb-14">
-        <h2 class="text-6xl font-bold text-purple-400 -mt-6 select-none">
-          چرا اگزو گیم
-        </h2>
-      </div>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center max-w-screen-2xl mx-auto px-4"
-      >
-        <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
-        >
-          <div class="text-5xl">
-            <i class="fa-solid fa-rocket"></i>
-          </div>
-          <p class="mt-4 text-xl font-semibold select-none">ارسال سریع</p>
-        </div>
-
-        <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
-        >
-          <div class="text-5xl">
-            <i class="fa-solid fa-shield-halved select-none"></i>
-          </div>
-          <p class="mt-4 text-xl font-semibold">گارانتی</p>
-        </div>
-
-        <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
-        >
-          <div class="text-5xl">
-            <i class="fa-solid fa-coins"></i>
-          </div>
-          <p class="mt-4 text-xl font-semibold select-none">بهترین قیمت</p>
-        </div>
-
-        <div
-          class="bg-gray-800 p-10 rounded-2xl transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/30"
-        >
-          <div class="text-5xl">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <p class="mt-4 text-xl font-semibold select-none">
-            پشتیبانی 24 ساعته
-          </p>
-        </div>
-      </div>
-    </section>
     <!-- FOOTER -->
     <footer class="bg-gray-950 text-white py-10 px-6 mt-10">
       <div class="text-center">
