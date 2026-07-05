@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -126,5 +127,720 @@
         ></div>
       </div>
     </section>
+    <section class="px-10 py-10">
+      <!-- header -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-white text-2xl font-bold">🔥 تخفیف‌های ویژه</h2>
+        <a href="#" class="text-purple-400 text-sm">مشاهده همه</a>
+      </div>
+      <!-- 🔥 دکمه‌ها -->
+      <div class="flex gap-2 mb-4">
+        <button id="prevDiscount" class="bg-slate-800 p-2 rounded text-white">
+          ❯
+        </button>
+        <button id="nextDiscount" class="bg-slate-800 p-2 rounded text-white">
+          ❮
+        </button>
+      </div>
+
+      <!-- slider -->
+      <div
+        id="discountSlider"
+        class="no-scrollbar flex gap-5 overflow-x-auto scroll-smooth"
+      >
+        <!-- card -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            25%-
+          </span>
+
+          <img
+            src="images/off/ROG-Thor-1200W-Platinum3-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">پاور 1200 وات</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              4,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 86,200,000 </span>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            20%-
+          </span>
+
+          <img
+            src="images/off/GIGABYTE-GeForce-RTX-5070-GAMING-OC-12G-Gaming-GDDR7-Graphics-Card-GV-N5070GAMING-OC-12GD-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">کارت گرافیک gigabyte</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 140,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            20%-
+          </span>
+
+          <img
+            src="images/off/MSI-Katana-15-HX-B14WFK-i7-14650HX16GB1TBSSD8GB-RTX5060-15.6Inch-FHD-Laptop-5-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">لب تاپ گیمیگ msi</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 240,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            33%-
+          </span>
+
+          <img
+            src="images/off/CoolCold-K42-3FANS-RGB-Cooling-Pad-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">پایه خنک کننده</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 3,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            35%-
+          </span>
+
+          <img
+            src="images/off/Logitech-F710-Wireless-Gamepad1-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">دسته بازی</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 7,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            22%-
+          </span>
+
+          <img
+            src="images/off/XIGMATEK-Vision-1-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">کیس گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            23%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">کیبورد لاجیتک</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 8,500,000 </span>
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="w-full rounded-lg mb-3"
+            />
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            25%-
+          </span>
+
+          <img
+            src="images/off/HyperX-Cloud-II-7.1-Surround-Sound-Wired-Gaming-Headset-1-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">هدست گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              4,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 3,200,000 </span>
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            25%-
+          </span>
+
+          <img
+            src="images/off/Intel-Core-i9-14900K-1-1-600x600.webp"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">فن سی پی یو</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              4,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 3,200,000 </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative mx-10 my-16 rounded-3xl overflow-hidden">
+      <!-- BG IMAGE -->
+      <img
+        src="images/banner1.jpg"
+        class="w-full h-[300px] object-cover opacity-40"
+      />
+
+      <!-- OVERLAY -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-black/70"
+      ></div>
+
+      <!-- CONTENT -->
+      <div class="absolute inset-0 flex items-center justify-between px-16">
+        <div class="text-white max-w-lg">
+          <h2 class="text-4xl font-bold mb-3">تخفیف‌های ویژه این هفته</h2>
+
+          <p class="text-gray-300">تا ۳۰٪ تخفیف روی تجهیزات گیمینگ</p>
+
+          <button
+            class="mt-4 bg-purple-600 px-6 py-2 rounded-lg hover:bg-purple-500"
+          >
+            مشاهده تخفیف‌ها
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="px-10 py-10">
+      <!-- header -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-white text-2xl font-bold">🔥 پر فروشترین</h2>
+        <a href="#" class="text-purple-400 text-sm">مشاهده همه</a>
+      </div>
+
+      <!-- 🔥 دکمه‌ها -->
+      <div class="flex gap-2 mb-4">
+        <button id="prevBest" class="bg-slate-800 p-2 rounded text-white">
+          ❯
+        </button>
+        <button id="nextBest" class="bg-slate-800 p-2 rounded text-white">
+          ❮
+        </button>
+      </div>
+
+      <!-- slider -->
+      <div
+        id="bestSellerSlider"
+        class="no-scrollbar flex gap-5 overflow-x-auto scroll-smooth"
+      >
+        <div
+          id="slider"
+          class="flex transition-transform duration-500 ease-in-out"
+        >
+          <!-- card -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/MOST SALE/Seagate-Exos-X18-16TB-256MB-SATAIII-internal-Hard-Disk-1-600x600.webp"
+              class="w-full rounded-lg mb-3"
+            />
+
+            <h3 class="font-semibold">هارد</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 24,500,000 </span>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img src="images/MOST SALE/BenQ-ZOWIE-XL2586X-1-600x600.webp" />
+
+            <h3 class="font-semibold">مانیتور گیمینگ</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/MOST SALE/Logitech-M280-Wireless-Mouse-2-600x600.webp"
+            />
+
+            <h3 class="font-semibold">موس گیمینگ</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img src="images/MOST SALE/Trust-Mico-1-600x600.webp" />
+
+            <h3 class="font-semibold">میکروفون باسیم</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img src="images/MOST SALE/USAMS-ID25-12-600x600.webp" />
+
+            <h3 class="font-semibold">هندزفری بی سیم</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="w-full rounded-lg mb-3"
+            />
+
+            <h3 class="font-semibold">پایه نگهدارنده موبایل</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/MOST SALE/USAMS-ZJ070-Mobile-Phone-Holder-2-600x600.webp"
+            />
+
+            <h3 class="font-semibold">پاور گیرین</h3>
+
+            <div class="mt-2">
+              <span class="block text-gray-400 line-through text-sm">
+                15,000,000
+              </span>
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/MOST SALE/Usams-SJ681-Type-C-to-Lightning-adapter-5-600x600.webp"
+            />
+
+            <h3 class="font-semibold">مبدل Type-C به Lightning</h3>
+
+            <div class="mt-2">
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+          >
+            <span
+              class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+            >
+              20%-
+            </span>
+
+            <img
+              src="https://via.placeholder.com/300x200"
+              class="w-full rounded-lg mb-3"
+            />
+
+            <h3 class="font-semibold">مانیتور گیمینگ</h3>
+
+            <div class="mt-2">
+              <span class="block text-gray-400 line-through text-sm">
+                15,000,000
+              </span>
+              <span class="text-red-500 font-bold"> 12,500,000 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative mx-10 my-16 rounded-3xl overflow-hidden">
+      <!-- BG -->
+      <img
+        src="images/banner2.jpg"
+        class="w-full h-[300px] object-cover opacity-40"
+      />
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-pink-900/80 to-black/70"
+      ></div>
+
+      <!-- CONTENT -->
+      <div class="absolute inset-0 flex items-center justify-between px-16">
+        <div class="text-white max-w-lg">
+          <h2 class="text-4xl font-bold mb-3">انتخاب حرفه‌ای‌ها ⭐</h2>
+
+          <p class="text-gray-300">بهترین تجهیزات پیشنهادی برای گیمرها</p>
+
+          <button
+            class="mt-4 bg-pink-500 px-6 py-2 rounded-lg hover:bg-pink-400"
+          >
+            دیدن محصولات منتخب
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="px-10 py-10">
+      <!-- header -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-white text-2xl font-bold">🔥 منتخب</h2>
+        <a href="#" class="text-purple-400 text-sm">مشاهده همه</a>
+      </div>
+      <!-- 🔥 دکمه‌ها -->
+      <div class="flex gap-2 mb-4">
+        <button id="prevFeatured" class="bg-slate-800 p-2 rounded text-white">
+          ❯
+        </button>
+        <button id="nextFeatured" class="bg-slate-800 p-2 rounded text-white">
+          ❮
+        </button>
+      </div>
+
+      <!-- slider -->
+      <div id="featuredSlider" class="flex gap-5 overflow-x-auto scroll-smooth">
+        <!-- card -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            25%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">هدست گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              4,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 3,200,000 </span>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            20%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">مانیتور گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            20%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">موس گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            33%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">هدست گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            35%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">موس پد RGB</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            22%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">کیس گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            23%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">پاور گیرین</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="item min-w-[260px] bg-slate-900 rounded-2xl p-4 text-white relative hover:-translate-y-1 transition"
+        >
+          <span
+            class="absolute top-3 right-3 bg-red-500 text-xs px-2 py-1 rounded-md"
+          >
+            22%-
+          </span>
+
+          <img
+            src="https://via.placeholder.com/300x200"
+            class="w-full rounded-lg mb-3"
+          />
+
+          <h3 class="font-semibold">کیس گیمینگ</h3>
+
+          <div class="mt-2">
+            <span class="block text-gray-400 line-through text-sm">
+              15,000,000
+            </span>
+            <span class="text-red-500 font-bold"> 12,500,000 </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white py-10 px-6 mt-10">
+      <div class="text-center">
+        <h3
+          class="text-2xl font-bold text-purple-400 flex items-center gap-2 justify-center w-full"
+        >
+          اگزو گیم
+          <i class="fa-solid fa-ghost text-gray-400"></i>
+        </h3>
+        <p class="text-gray-400 mt-2 select-none">
+          فروشگاه تخصصی تجهیزات گیمینگ
+        </p>
+
+        <p class="text-gray-500 mt-4">
+          <i class="fa-solid fa-location-dot"></i>
+          تهران، خیابان ولیعصر
+        </p>
+
+        <p class="text-gray-500">
+          <i class="fa-solid fa-phone"></i>
+          099254685
+        </p>
+      </div>
+    </footer>
+    <script>
+      function sliderControl(sliderId, nextId, prevId) {
+        const slider = document.getElementById(sliderId);
+        const next = document.getElementById(nextId);
+        const prev = document.getElementById(prevId);
+
+        next.onclick = () => (slider.scrollLeft += 300);
+        prev.onclick = () => (slider.scrollLeft -= 300);
+      }
+
+      window.onload = () => {
+        sliderControl("discountSlider", "nextDiscount", "prevDiscount");
+        sliderControl("bestSellerSlider", "nextBest", "prevBest");
+        sliderControl("featuredSlider", "nextFeatured", "prevFeatured");
+      };
+    </script>
   </body>
 </html>
